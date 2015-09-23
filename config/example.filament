@@ -10,7 +10,7 @@
  *        - params
  */
 {
-  "name":"TestProfile1",
+  "name":"TestProfile2",
   "material":"pla",
   "printers": {
     "200": {
