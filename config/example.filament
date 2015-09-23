@@ -1,0 +1,27 @@
+/**
+ * Filament configuration file
+ * 
+ * required fields:
+ *    - name (shown in software)
+ *    - material
+ *    - printers (supported printers specification, following params are required for each printer)
+ *        - extruderTemp
+ *        - bedTemp (optional)
+ *        - params
+ */
+{
+  "name":"TestProfile",
+  "material":"pla",
+  "printers": {
+    "200": {
+      "extruderTemp":200, /* required */
+      "bedTemp":0, /* optional */
+      "params": { /* required (can be empty) */
+        "moveSpeed":33,
+        "printSpeed":38,
+        "supportLineDistance":5,
+        "insetCount": 50
+      }
+    }
+  }
+}
